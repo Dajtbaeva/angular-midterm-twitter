@@ -3,10 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { FeedPageComponent } from './pages/feed-page/feed-page.component';
+import { CommentComponent } from './components/comment/comment.component';
+import { PostComponent } from './components/post/post.component';
+import { LikeComponent } from './components/like/like.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutPageComponent,
+    HomePageComponent,
+    FeedPageComponent,
+    CommentComponent,
+    PostComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,
