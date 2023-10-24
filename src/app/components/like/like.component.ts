@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./like.component.css']
 })
 export class LikeComponent {
-
+  addLike(item){
+    item.likes++;
+  }
+  removeLike(){
+    item.likes--;
+  }
 }

@@ -9,6 +9,7 @@ import { FeedPageComponent } from './pages/feed-page/feed-page.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { PostComponent } from './components/post/post.component';
 import { LikeComponent } from './components/like/like.component';
+import { HighlightDirective } from './app-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,11 @@ import { LikeComponent } from './components/like/like.component';
     FeedPageComponent,
     CommentComponent,
     PostComponent,
-    LikeComponent
+    LikeComponent,
+    HighlightDirective,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,1 +1,16 @@
-<p>like works!</p>
+<div id="single-like">
+  <li class="like-item">
+    <h2>{{ like.title | uppercase }}</h2>
+    <p>{{ like.body }}</p>
+    <button
+      (click)="addLike(item)"
+    >
+      Like
+    </button>
+    <button
+      (click)="removeLike(item)"
+    >
+      Dislike
+    </button>
+  </li>
+</div>
